@@ -1,0 +1,105 @@
+html {
+  background-color: rgb(0, 238, 255);
+}
+
+.title {
+  background-color: white;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  filter: drop-shadow(8px 8px 8px #18241c);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 100px;
+  text-align: center;
+  margin: 1em;
+}
+
+.battle {
+  text-align: center;
+  filter: drop-shadow(8px 8px 8px #18241c);
+  margin-bottom: 2em;
+}
+
+.images {
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(8px 8px 8px #18241c);
+  letter-spacing: 5em;
+}
+
+.rock {
+  max-width: 100px;
+  margin-left: 1em;
+  border-radius: 50%;
+  stroke: none;
+}
+
+.paper {
+  max-width: 100px;
+  border-radius: 50%;
+  stroke: none;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.scissors {
+  max-width: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  stroke: none;
+  margin-left: 1px;
+}
+
+button {
+  width: 110%;
+  cursor: pointer;
+  stroke: none;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+button.rock {
+  background-color: red;
+}
+
+button.paper {
+  background-color: green;
+}
+
+.fist {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move-fist 2s ease-in-out infinite;
+}
+
+@keyframes move-cpuHand {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+
+.animated {
+  animation: jump 3s linear infinite;
+}
+
+.cpuHand img {
+  animation: jump 3s linear infinite;
+}
+
+.cpuAnimate {
+  animation: jump 3s linear infinite;
+}
